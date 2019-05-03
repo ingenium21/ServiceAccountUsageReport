@@ -1,16 +1,21 @@
     
 <#
 	.SYNOPSIS
-		To reset AD password for list of users
+        To check if a particular account is being used somewhere
+    .AUTHOR
+        Renato Regalado    
 	.DESCRIPTION
-		To reset AD user password and force to change at next logon.
-		This script is built based on the request in TechNet Gallery.
-	.PARAMETER  UserID
+        Takes a username or user list parameter and iterates through each computer in the domain to check if it is being used 
+        anywhere as a service or scheduled task
+	.PARAMETER  username
 		SAMACCOUNTNAME of the User ID
-	.PARAMETER  ParameterB
-		Default Password or some string
+	.PARAMETER  userList
+		list of users' SAMACCOUNTNAMEs
 	.EXAMPLE 1
-		PS C:\> .\ResetUsersPasswords.ps1 
+        PS C:\> .\ServiceAccountUsageReport.ps1 -username john.doe
+    .EXAMPLE 2
+        PS c:\> .\ServiceAccountUsageReport.ps1 -userList 
+
 	.INPUTS
 		System.String,System.String
 		
