@@ -2,7 +2,7 @@
 <#
 	.SYNOPSIS
         To check if a particular account is being used somewhere
-    .AUTHOR
+    	.AUTHOR
         Renato Regalado    
 	.DESCRIPTION
         Takes a username or user list parameter and iterates through each computer in the domain to check if it is being used 
