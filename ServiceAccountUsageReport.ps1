@@ -6,7 +6,7 @@ changelog: created script
 #>
 <#
 	.SYNOPSIS
-        To check if a particular account is being used somewhere  
+        To check if a particular account is being used somewhere
 	.DESCRIPTION
         Takes a username or user list parameter and iterates through each computer in the domain to check if it is being used 
         anywhere as a service or scheduled task
